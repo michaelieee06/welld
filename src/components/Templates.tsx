@@ -1,16 +1,14 @@
 import { useState } from 'react'
 import { Label } from './shared'
 
-const U = (id: string) => `https://images.unsplash.com/photo-${id}?w=1800&h=900&fit=crop&auto=format`
-
 const templates = [
   {
     n: '01',
     name: 'yeonlee',
     tag: 'Creative portfolio',
     url: 'https://yeonlee.web.app',
-    img: U('1618005182384-a83a8bd57fbe'),
-    alt: 'Creative design portfolio showcase',
+    img: '/projects/yeonlee.jpg',
+    alt: 'yeonlee website screenshot',
     copy: 'Persona-style UI, bold poster typography, and case studies that hit like a critical strike.',
   },
   {
@@ -18,8 +16,8 @@ const templates = [
     name: 'Lembanna',
     tag: 'Coastal village',
     url: 'https://lembannaarabahari.github.io/lembannaarabahari',
-    img: U('1507525428034-b723cf961d3e'),
-    alt: 'Coastal cliffs and turquoise waters',
+    img: '/projects/lembanna.jpg',
+    alt: 'Desa Wisata Lembanna website screenshot',
     copy: 'Turquoise cliff views, sea-cave guides, and route maps for Bulukumba’s coastal edge.',
   },
   {
@@ -27,8 +25,8 @@ const templates = [
     name: 'Purunik',
     tag: 'Woven crafts',
     url: 'https://purunikk-db.web.app/',
-    img: U('1590736969955-71cc94801759'),
-    alt: 'Handwoven natural purun fiber crafts',
+    img: '/projects/purunik.jpg',
+    alt: 'Purunik Kerajinan website screenshot',
     copy: 'Handmade purun bags, raw woven textures, and direct orders from Tabalong artisans.',
   },
   {
@@ -36,8 +34,8 @@ const templates = [
     name: 'UBM Belajar',
     tag: 'Study repository',
     url: 'https://ubmbelajar.web.app',
-    img: U('1522071820081-009f0129c71c'),
-    alt: 'Study desk and research materials',
+    img: '/projects/ubmbelajar.jpg',
+    alt: 'UBM Belajar website screenshot',
     copy: 'Exam formula sheets, course slide archives, and lecture notes — searchable in two clicks.',
   },
   {
@@ -45,8 +43,8 @@ const templates = [
     name: 'Desa Golo Loni',
     tag: 'Eco-village',
     url: 'http://desagololoni.github.io/gololoni',
-    img: U('1500530855697-b586d89ba3ee'),
-    alt: 'Highland terraces and river valley',
+    img: '/projects/gololoni.jpg',
+    alt: 'Desa Golo Loni website screenshot',
     copy: 'River tubing spots, coffee harvest dates, and homestay bookings in the Flores hills.',
   },
   {
@@ -54,8 +52,8 @@ const templates = [
     name: 'Dapur Pepaya',
     tag: 'Kitchen & catering',
     url: 'https://dapurpepaya.github.io/dapurpepaya',
-    img: U('1555396273-367ea4eb4db5'),
-    alt: 'Freshly prepared food on kitchen table',
+    img: '/projects/dapurpepaya.jpg',
+    alt: 'Dapur Pepaya website screenshot',
     copy: 'Daily catering menus, boxed lunch drops, and family recipes made from scratch.',
   },
 ]
@@ -96,8 +94,8 @@ export function Templates() {
                 src={t.img}
                 alt={t.alt}
                 loading="lazy"
-                className={`absolute inset-0 size-full bg-black object-cover transition-transform duration-1000 ${
-                  on ? 'scale-100' : 'scale-110'
+                className={`absolute inset-0 size-full bg-black object-cover object-top transition-transform duration-1000 ${
+                  on ? 'scale-100' : 'scale-105'
                 }`}
               />
               <div
