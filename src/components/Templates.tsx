@@ -110,7 +110,7 @@ export function Templates() {
               <div className="absolute inset-x-0 bottom-0 flex flex-col gap-3 p-5 text-white md:flex-row md:items-end md:justify-between md:p-10">
                 <div className={`flex items-center gap-4 md:gap-8 ${on ? '' : 'mb-1 md:mb-0'}`}>
                   <span className="font-mono text-sm md:text-lg font-bold text-zinc-400">{t.n}</span>
-                  <span className="font-cinzel text-4xl font-extrabold leading-none tracking-tight md:text-7xl text-white">
+                  <span className="font-serif font-normal italic text-4xl leading-none tracking-tight md:text-7xl text-white">
                     {t.name}
                   </span>
                 </div>
